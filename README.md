@@ -1,17 +1,24 @@
 # AWS Architecture Portfolio
 
-This repository contains architecture-focused AWS projects demonstrating high availability, security, scalability, and cost optimization tradeoffs.
+This repository contains architecture-focused AWS projects that demonstrate high availability, security, scalability, and cost optimization tradeoffs.
 
-## Projects
+## Current Project
 
-1. Secure VPC Architecture
-2. Highly Available Web Application
-3. Storage Cost Optimization Strategy
-4. Serverless API Architecture
+### 1. Secure VPC Architecture
+A multi-AZ VPC design with public, private application, and private database subnets. This project focuses on secure network segmentation, resilient outbound access, and operational access through AWS Systems Manager Session Manager instead of a bastion host.
 
-Each project includes:
+**Included:**
 - Architecture diagram
-- Design rationale
+- Design overview
+- Design decisions
 - Security considerations
 - Cost considerations
 - Tradeoff analysis
+- Failure scenario review
+
+## Planned Additions
+Additional projects will be added after completion of the AWS Solutions Architect Associate certification and expanded architecture work.
+
+## Repository Structure
+
+- `01-secure-vpc/` – secure multi-AZ VPC architecture project
