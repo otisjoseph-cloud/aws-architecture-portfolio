@@ -8,7 +8,9 @@ The goal of this portfolio is to show cloud architecture judgment through docume
 
 ### 1. Secure VPC Architecture
 
-A multi-AZ VPC design with public, private application, and private database subnets. This project focuses on secure network segmentation, resilient outbound access, and operational access through AWS Systems Manager Session Manager instead of a bastion host.
+A multi-AZ VPC design with public, private application, and private database subnets.
+
+This project focuses on secure network segmentation, resilient outbound access, and operational access through AWS Systems Manager Session Manager instead of a bastion host.
 
 **Included:**
 
