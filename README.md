@@ -11,6 +11,7 @@ The goal of this portfolio is to show cloud architecture judgment through docume
 A multi-AZ VPC design with public, private application, and private database subnets. This project focuses on secure network segmentation, resilient outbound access, and operational access through AWS Systems Manager Session Manager instead of a bastion host.
 
 **Included:**
+
 - Architecture diagram
 - Design overview
 - Design decisions
@@ -29,13 +30,14 @@ A multi-AZ VPC design with public, private application, and private database sub
 Additional AWS architecture projects will focus on healthcare cloud, data pipelines, monitoring, cost optimization, and cloud operations use cases.
 
 Planned projects:
+
 - Healthcare Claims Data Pipeline on AWS
 - HIPAA-Aware Patient Portal Reference Architecture
 - Cloud Cost Optimization / FinOps Case Study
 
 ## Repository Structure
 
-- `01-secure-vpc/` – Secure multi-AZ VPC architecture project
+- `01-secure-vpc/` - Secure multi-AZ VPC architecture project
 
 ## Portfolio Focus Areas
 
@@ -49,6 +51,6 @@ Planned projects:
 ## Author
 
 Otis Joseph  
-AWS Certified Solutions Architect – Associate  
+AWS Certified Solutions Architect - Associate  
 AWS Certified Cloud Practitioner  
 AWS Certified AI Practitioner
