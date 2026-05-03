@@ -21,23 +21,23 @@ The architecture uses:
 
 ## Design Decisions
 
-### 1. Multi-AZ deployment
+### 1. Multi-AZ Deployment
 
 Resources are distributed across two Availability Zones to reduce the impact of a single AZ failure and improve availability.
 
-### 2. Public, private, and database subnet separation
+### 2. Public, Private, and Database Subnet Separation
 
 The architecture isolates internet-facing resources from application and database resources. This reduces exposure and supports least-privilege network design.
 
-### 3. NAT Gateway in each Availability Zone
+### 3. NAT Gateway in Each Availability Zone
 
 Each private application subnet uses a NAT Gateway in the same Availability Zone. This avoids dependence on a single NAT Gateway and reduces cross-AZ dependency during failure scenarios.
 
-### 4. No bastion host
+### 4. No Bastion Host
 
 Instead of exposing SSH access through a bastion host, the design uses AWS Systems Manager Session Manager. This reduces attack surface, avoids managing inbound SSH rules, and improves administrative security.
 
-### 5. Private database subnets with no internet route
+### 5. Private Database Subnets with No Internet Route
 
 Database resources are placed in private subnets with no direct internet access. This helps protect sensitive data and aligns with secure application architecture patterns.
 
@@ -146,7 +146,6 @@ If Availability Zone A fails:
 
 Future enhancements could include:
 
-- Explicit load balancer placement and traffic flow labeling
 - Network ACL discussion
 - VPC endpoints for private AWS service access
 - More detailed database failover notes
