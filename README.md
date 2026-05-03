@@ -1,8 +1,8 @@
 # AWS Architecture Portfolio
 
-This repository contains architecture-focused AWS projects that demonstrate high availability, security, scalability, operational visibility, and cost optimization tradeoffs.
+This repository contains AWS architecture design work focused on secure, resilient, and cost-aware cloud environments.
 
-The goal of this portfolio is to show cloud architecture judgment through documented designs, diagrams, service tradeoffs, failure scenarios, and improvement paths.
+The current project is a Secure VPC Architecture reference design. It demonstrates cloud architecture judgment through documented design decisions, diagrams, security considerations, operational monitoring notes, service tradeoffs, failure scenarios, and improvement paths.
 
 ## Current Projects
 
