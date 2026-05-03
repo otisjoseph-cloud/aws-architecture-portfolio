@@ -1,18 +1,25 @@
-# AWS Architecture Portfolio
+# Secure VPC Architecture on AWS
 
-This repository contains AWS architecture design work focused on secure, resilient, and cost-aware cloud environments.
+This repository presents a secure, multi-AZ AWS VPC reference architecture designed for high availability, network segmentation, controlled administrative access, and cost-aware cloud design.
 
-The current project is a Secure VPC Architecture reference design. It demonstrates cloud architecture judgment through documented design decisions, diagrams, security considerations, operational monitoring notes, service tradeoffs, failure scenarios, and improvement paths.
+The goal of this project is to demonstrate cloud architecture judgment through documented design decisions, diagrams, security considerations, operational monitoring notes, service tradeoffs, failure scenarios, and improvement paths.
 
-## Current Projects
+## Project Scope
 
-### 1. Secure VPC Architecture
+This project focuses on a secure VPC architecture with:
 
-A multi-AZ VPC design with public, private application, and private database subnets.
+- Public subnets for internet-facing components
+- Private application subnets for compute resources
+- Private database subnets with no direct internet route
+- NAT Gateways in each Availability Zone for resilient outbound access
+- Application Load Balancer traffic flow
+- AWS Systems Manager Session Manager instead of bastion-host SSH access
+- Security group boundaries between public, application, and database tiers
+- Route table design and subnet-level traffic control
+- Monitoring and operational visibility considerations
+- Availability Zone failure scenario review
 
-This project focuses on secure network segmentation, resilient outbound access, and operational access through AWS Systems Manager Session Manager instead of a bastion host.
-
-**Included:**
+## Included
 
 - Architecture diagram
 - Design overview
@@ -27,27 +34,18 @@ This project focuses on secure network segmentation, resilient outbound access, 
 - IAM and access model
 - Interview explanation
 
-## Planned Additions
-
-Additional AWS architecture projects will focus on healthcare cloud, data pipelines, monitoring, cost optimization, and cloud operations use cases.
-
-Planned projects:
-
-- Healthcare Claims Data Pipeline on AWS
-- HIPAA-Aware Patient Portal Reference Architecture
-- Cloud Cost Optimization / FinOps Case Study
-
 ## Repository Structure
 
 - `01-secure-vpc/` - Secure multi-AZ VPC architecture project
 
-## Portfolio Focus Areas
+## Focus Areas
 
-- AWS architecture fundamentals
-- Secure network design
+- AWS VPC architecture fundamentals
+- Secure network segmentation
 - High availability and failure planning
 - Cost-aware architecture decisions
 - Monitoring and operational visibility
+- IAM and administrative access controls
 - Healthcare and regulated-environment design thinking
 
 ## Author
